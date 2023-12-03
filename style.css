@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Zone */
+header {
+    min-height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav>a {
+    font-weight: 700;
+}
+
+/* Profile Zone */
+.profile {
+    min-height: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.profile-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.profile img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+}
+
+.profile button {
+    background-color: #e4685d;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.profile button:hover {
+    background-color: #eb675e;
+}
+
+/* Feed zone */
+.feed {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    background-color: lightblue;
+    gap: 1rem;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.feed-header a {
+    color: blue;
+}
+
+.post {
+    /* background-color: #e4685d; */
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: white;
+    min-height: 230px;
+}
+
+.post-card p {
+    font-size: 14px;
+}
+
+.post-card-dp {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.date {
+    border-right: 1px solid black;
+    padding-right: 1rem;
+}
+
+.name {
+    padding-left: 1rem;
+}
+
+/* Fresture feed zone */
+
+.featured-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 5rem;
+    gap: 0rem;
+}
+.f-card {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+    min-height: 150px;
+
+}
+.f-card h2 {
+    color: rgb(2, 2, 54);
+}
+.f-left {
+    min-width: 20%;
+}
+.f-left img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.f-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    min-width: 70%;
+}
+.f-right div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.f-date {
+    /* min-width: 3rem; */
+    border-radius: 1rem;
+    background-color: darkblue;
+    color: white;
+    padding: 0px 0.5rem;
+    text-align: center;
+}
+.f-type {
+    color: gray;
+}
+
+/* Footer zone */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+}
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.contact a img {
+    width: 2rem;
+}
+
+/* Responsive  */
+
+@media (max-width : 426px) {
+    .profile {
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap-reverse;
+        gap: 2rem  ;
+    }
+    .profile-left {
+        width: 100%;
+        align-items: center;
+    }
+    .profile-left p, .profile-left h1 {
+        text-align: center;
+    }
+    
+    .post {
+        flex-direction: column;
+    }
+    .post-card {
+        width: 100%;
+    }
+    .f-card {
+        flex-direction: column;
+    }
+    .profile , .feed , .featured-feed {
+        padding: 1rem;
+    }
+}
